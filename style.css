@@ -41,6 +41,10 @@ html{
     height:100px;
 }
 
+.navbar-brand h2{
+    color:white;
+}
+
 .navbar-brand img{
     height:40px;
     padding-left: 30px;
@@ -67,9 +71,7 @@ html{
 #navbarNav ul li a{
     color:white;
 }
-.navbar a{
-    
-}
+
 #navbarNav ul li a:active{
     color:red;
 }
