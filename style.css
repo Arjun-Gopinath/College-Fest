@@ -67,6 +67,9 @@ html{
 #navbarNav ul li a{
     color:white;
 }
+.navbar a{
+    
+}
 #navbarNav ul li a:active{
     color:red;
 }
@@ -190,7 +193,7 @@ form .form-control{
     margin-top:30px;
 } 
 .mul-select{
-    width:500px;;
+    width:100%;
     background:#1e1e1e;
     margin-left:50px;
     }
@@ -317,7 +320,7 @@ input[type=email]:focus {
 /*-----FOOTER----*/
 #footer{
 	padding-top:20px;
-	height:300px;
+	height:250px;
 	width:100%;
 	background-color:#1e1e1e;
 	display: inline-block;
@@ -330,11 +333,7 @@ input[type=email]:focus {
 	margin-top:10px;
    font-family:sans-serif;
 }
-.links{
-	margin-left:50%;
-	transform: translateX(-50%);
-	width:auto;
-}
+
 .footer-container a:hover{
 	text-decoration:underline;
 	color:#999999;
@@ -351,14 +350,11 @@ input[type=email]:focus {
 
 .footer-container .rights{
 	color:white;
-	margin-left:55%;
-	transform:translateX(-30%);
+	margin-left:50%;
+	transform:translateX(-20%);
 	font-family:sans-serif;
-}
-.footer-container p{
-	color:white;
-	font-family:sans-serif;
-	margin-left:0px;
-	font-size:15px;
+    margin-top:20px;
+    width:auto;
+    padding:0px;
 }
 
