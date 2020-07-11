@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +35,26 @@ html{
   background:#DD0000 ; 
 }
 
+/*-------------GO-TOP------------*/
+.gotopbtn{
+  position: fixed;
+  width:30px;
+  height:30px;
+  background:rgba(255,255,255,0.3);
+  bottom:8%;
+  left:1.3%;
+  border-radius:10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 10px;
+  color: white;
+  font-size: 30px;
+  margin-top:0px;
+  z-index:10;
+}
+.gotopbtn:hover{
+    color:#c4fb6d;
+}
 
 /*Navbar*/
 
@@ -43,12 +68,15 @@ html{
 
 .navbar-brand h2{
     color:white;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .navbar-brand img{
     height:40px;
     padding-left: 30px;
+ 
 }
+
 
 .navbar-nav li{
     padding: 0  10px;
@@ -57,14 +85,15 @@ html{
 .navbar-nav li a{
     float:right;
     text-align: left;
-   color:palegreen;
+    color:white;
     line-height:50px;
+   border-bottom:2px solid #1e1e1e;
 }
 
 #nav-bar ul li a:hover{
     width:auto;
-    color:lawngreen;
-    border-bottom:2px solid lawngreen;
+    color:#c4fb6d;
+    border-bottom:2px solid #c4fb6d;
     transition:0.5s;
     padding-bottom:0px;
 }
@@ -194,11 +223,10 @@ form .form-control{
     outline:none;
     margin-top:30px;
 } 
-.mul-select{
+#Event-list{
+    height:50px;
     width:100%;
-    background:#1e1e1e;
-    margin-left:50px;
-    }
+}
 input[type=text]:focus {
  background:#1e1e1e;
     border-radius: 25px;
@@ -223,11 +251,12 @@ select{
     color:white;
 }
 
-.mul-select{
-    width:100%;
-    background:black;
-}
 
+   .mul-select{
+    width:100%;
+    background-color:#1e1e1e !important;
+    border-radius:50px;
+               }
 
 
 #branch:focus {
@@ -283,29 +312,75 @@ input[type=email]:focus {
 /* ----------About---------------*/
 
 .about-all-container h2{
-    font-size: 30px;
-    color:white;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight:700;
+    font-size: 40px;
     border-bottom: 2px solid #DD0000;
-    width:150px;
+    width:250px;
     padding-bottom: 20px;
+    margin-top:50px;
+    -webkit-animation: font-change 10s infinite;
+}
+@keyframes font-change
+{  0%{
+	color:black;
+	}
+	
+	
+	50%{ color:black;
+        
+		
+	}
+    
+	
+	100%{
+		color:white;
+	}
+	
 }
 #about{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/bg.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height:600px;
+   -webkit-animation: colornext 10s infinite;
+}
+@keyframes colornext
+{  0%{
+	background:yellow;
+	}
+	
+	
+	50%{ background:yellow;
+        
+		
+	}
+    
+	
+	100%{
+		background:#ff5200;
+	}
+	
 }
 
 .about-content{
     padding-top:20px;
-    color: white;
+   -webkit-animation: font-change 10s infinite;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    color:#1e1e1e;
+    font-weight:500;
+    font-style: normal;
+  
 }
+
+
 
 .img-zoom{
     overflow: hidden;
+    margin-top:10%;
+    margin-left:10%;
+    float:right;
+    shape-outside: content-box;
 }
 
 .img-zoom img{
@@ -316,9 +391,92 @@ input[type=email]:focus {
 
 .img-zoom:hover img{
     transform: scale(1.1);
+    cursor:pointer;
 }
 
 
+/* ----------Event list---------------*/
+#Events{
+    height:auto;
+    background:#1e1e1e;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.event-container h2{
+    color:white;
+    margin-left:50%;
+    margin-top:50px;
+}
+.event-container img{
+    width:800px;
+    margin-left:50%;
+}
+.event-container p{
+    color:white;
+    margin-left:50%;
+    transform:translateX(-50%);
+    margin-top:50px;
+}
+
+
+/* ----------CONTACT---------------*/
+
+.contact-all-container h2{
+    margin-left:50%;
+    transform:translateX(-50%);
+    font-size: 40px;
+    color:black;
+    border-bottom: 2px solid #DD0000;
+    width:250px;
+    padding-bottom: 20px;
+    width:180px;
+    text-align: center;
+    margin-bottom:100px;
+}
+#contact{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background:#7fcd91;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px;
+}
+
+.contact-content{
+    padding-top:20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    color:#1e1e1e;
+    font-weight:500;
+    text-align: center;
+    width:auto;
+}
+table{
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-bottom:30px;
+}
+table td,th{
+    padding:0px 50px;
+    text-align: center;
+}
+th{
+    text-decoration: none;
+    font-weight:700;
+}
+td{
+   height:50px;
+}
+
+.contact-content span{
+    color:white;
+}
 /*-----FOOTER----*/
 #footer{
 	padding-top:20px;
@@ -353,10 +511,10 @@ input[type=email]:focus {
 .footer-container .rights{
 	color:white;
 	margin-left:50%;
-	transform:translateX(-20%);
+	transform:translateX(-50%);
 	font-family:sans-serif;
     margin-top:20px;
-    width:auto;
-    padding:0px;
+    padding-right:0px;
+    width:318px;
 }
 
