@@ -26,7 +26,7 @@
     <style>
     .navbar-toggler-icon{
         color:white;
-}
+    }
         
         
    .mul-select{
@@ -151,7 +151,7 @@
                 </a>
               </div>
         </div>
- <a name="register"></a>
+        <a name="register"></a>
         <!--Register-->
        
         <div section id="register">
@@ -212,7 +212,7 @@
                         
                          <div class="form-group">
                             <label for="art-list">Art</label> 
-                            <select id="art-list" class="mul-select form-control" multiple="true" >
+                            <select id="art-list" class="mul-select form-control" multiple="multiple" >
                                 <option value="A1">Event1</option>
                                 <option value="A2">Event2</option>
                                 <option value="A3">Event3</option>
@@ -356,25 +356,26 @@
                 });
             })
     </script>
-        
     
-    <script>
-        function validate()
-        {
-            var selectChoose = document.getElementById('art-list');
-            var maxOptions = 2;
-            var optionCount = 0;
-            for (var i = 0; i < selectChoose.length; i++) {
-                if (selectChoose[i].selected) {
-                    optionCount++;
-                    if (optionCount > maxOptions) {
-                        alert("You can select only upto 5 events.")
-                        return false;
-                    }
-                }
+    
+    <script type = "text/javascript">
+        
+        $(document).ready(function() {
+
+          var last_valid_selection = null;
+
+          $('select#art-list').change(function(event) {
+
+            if ($(this).val().length > 5) {
+
+              $(this).val(last_valid_selection);
+              alert("Max selection reached, Please make selections wisely";
+            } 
+            else {
+              last_valid_selection = $(this).val();
             }
-            return true;
-        }
+          });
+        });
         </script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
