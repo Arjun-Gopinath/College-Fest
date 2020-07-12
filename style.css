@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+font-family:  'Poppins', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -67,9 +68,32 @@ html{
 }
 
 .navbar-brand h2{
-    color:white;
+   
     font-family: 'Shadows Into Light', cursive;
+ -webkit-animation: next 10s infinite;
 }
+@keyframes next
+{  0%{
+	color:yellow;
+	}
+	
+	
+	33%{ color:yellow;
+        
+		
+	}
+    
+	
+	66%{
+		color:#ff5200;
+	}
+    
+    100%{
+		color:#DD0000;
+	}
+	
+}
+
 
 .navbar-brand img{
     height:40px;
@@ -125,6 +149,7 @@ html{
     position: sticky;
     width:100%;
     overflow:hidden;
+    
 }
 
 .carousel-item img{
@@ -191,6 +216,8 @@ html{
     box-shadow:  13px 13px 7px #131313, 
              -8px -8px 7px #262626;
     border-radius:50px;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
 }
 .underline{
     background-color:#DD0000;
@@ -209,6 +236,7 @@ form label{
     text-align:left;
     clear: both;
     float:left;
+    font-family:  'Poppins', sans-serif;
 }
 form .form-control{
     margin-left:50%;
@@ -237,7 +265,8 @@ input[type=text]:focus {
 }
 ::-webkit-input-placeholder { 
     font-weight:100;
-    
+    font-size:15px;
+    color:white;
 }
 #semester:focus {
     background:#1e1e1e;
@@ -312,14 +341,15 @@ input[type=email]:focus {
 /* ----------About---------------*/
 
 .about-all-container h2{
-    font-family: 'Shadows Into Light', cursive;
-    font-weight:700;
+    font-family:'Poppins', sans-serif;
+    font-weight:500;
     font-size: 40px;
     border-bottom: 2px solid #DD0000;
     width:250px;
     padding-bottom: 20px;
     margin-top:50px;
     -webkit-animation: font-change 10s infinite;
+    text-align:center;
 }
 @keyframes font-change
 {  0%{
@@ -379,8 +409,6 @@ input[type=email]:focus {
     overflow: hidden;
     margin-top:10%;
     margin-left:10%;
-    float:right;
-    shape-outside: content-box;
 }
 
 .img-zoom img{
@@ -427,13 +455,14 @@ input[type=email]:focus {
     margin-left:50%;
     transform:translateX(-50%);
     font-size: 40px;
-    color:black;
+    color:white;
     border-bottom: 2px solid #DD0000;
     width:250px;
     padding-bottom: 20px;
     width:180px;
     text-align: center;
     margin-bottom:100px;
+    font-weight:600;
 }
 #contact{
     padding-top: 50px;
@@ -512,9 +541,9 @@ td{
 	color:white;
 	margin-left:50%;
 	transform:translateX(-50%);
-	font-family:sans-serif;
+	font-family: 'Poppins', sans-serif;
     margin-top:20px;
     padding-right:0px;
-    width:318px;
+    width:325px;
 }
 
