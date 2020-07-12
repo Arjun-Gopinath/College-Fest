@@ -6,7 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-font-family:  'Poppins', sans-serif;
+    font-family:  'Poppins', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -67,39 +67,14 @@ html{
     height:100px;
 }
 
-.navbar-brand h2{
-   
-    font-family: 'Shadows Into Light', cursive;
- -webkit-animation: next 10s infinite;
-}
-@keyframes next
-{  0%{
-	color:yellow;
-	}
-	
-	
-	33%{ color:yellow;
-        
-		
-	}
-    
-	
-	66%{
-		color:#ff5200;
-	}
-    
-    100%{
-		color:#DD0000;
-	}
-	
-}
-
-
 .navbar-brand img{
-    height:40px;
-    padding-left: 30px;
- 
+   
+font-family: 'Shadows Into Light', cursive;
+ height:100px;
+ width:80px;
+ margin-left:10px;
 }
+
 
 
 .navbar-nav li{
@@ -230,13 +205,17 @@ html{
     margin-bottom:100px;
 }
 form label{
-    padding-top:20px;
+    padding-top:15px;
     width:auto;
     color:white;
     text-align:left;
     clear: both;
     float:left;
     font-family:  'Poppins', sans-serif;
+}
+option{
+    color:white;
+    font-weight:500;
 }
 form .form-control{
     margin-left:50%;
@@ -251,7 +230,12 @@ form .form-control{
     outline:none;
     margin-top:30px;
 } 
-#Event-list{
+#art-list{
+    height:50px;
+    width:100%;
+}
+
+#Tech-list{
     height:50px;
     width:100%;
 }
@@ -263,10 +247,10 @@ input[type=text]:focus {
                 inset -5px -5px 4px #292929;
     outline:none;
 }
+
 ::-webkit-input-placeholder { 
-    font-weight:100;
+    font-weight:600;
     font-size:15px;
-    color:white;
 }
 #semester:focus {
     background:#1e1e1e;
@@ -281,11 +265,6 @@ select{
 }
 
 
-   .mul-select{
-    width:100%;
-    background-color:#1e1e1e !important;
-    border-radius:50px;
-               }
 
 
 #branch:focus {
@@ -342,7 +321,7 @@ input[type=email]:focus {
 
 .about-all-container h2{
     font-family:'Poppins', sans-serif;
-    font-weight:500;
+    font-weight:600;
     font-size: 40px;
     border-bottom: 2px solid #DD0000;
     width:250px;
@@ -455,7 +434,7 @@ input[type=email]:focus {
     margin-left:50%;
     transform:translateX(-50%);
     font-size: 40px;
-    color:white;
+    color:#1e1e1e;
     border-bottom: 2px solid #DD0000;
     width:250px;
     padding-bottom: 20px;
@@ -492,15 +471,17 @@ table{
     margin-bottom:30px;
 }
 table td,th{
-    padding:0px 50px;
+    padding:0px 90px;
     text-align: center;
 }
 th{
     text-decoration: none;
     font-weight:700;
+
 }
 td{
    height:50px;
+  font-weight:500;
 }
 
 .contact-content span{
@@ -520,7 +501,7 @@ td{
     font-variant:small-caps;
 	padding:0px 30px;
 	margin-top:10px;
-   font-family:sans-serif;
+    font-family:sans-serif;
 }
 
 .footer-container a:hover{
