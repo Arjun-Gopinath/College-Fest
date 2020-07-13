@@ -26,10 +26,12 @@ const consumerSchema = new mongoose.Schema({
         required:true
     },
     artList:{
+        type:Array,
         required:true
 
     },
     techList:{
+        type:Array,
         required:true
 
     }
@@ -44,6 +46,6 @@ module.exports.getUser = function(callback, limit){
     
 }
 
-module.exports.addUser = function(book, callback){
-	User.create(book, callback);
+module.exports.addUser = function(user, callback){
+	User.create(user, callback);
 }

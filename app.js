@@ -33,18 +33,18 @@ mongoose.connect(uri,function(err){
 });
 var db = mongoose.connection;
 
-app.post('/views/pages', (req, res) => {
+app.post('/pages', (req, res) => {
 	var user = req.body;
+	console.log(user);
 	User.addUser(user, (err, users) => {
 		if(err){
 			throw err;
 		}
 		res.json(users);
-		res.render('pages/success');
 	});
 });
 
-app.get('/api/allUsers', function(req, res){
+app.get('/allUsers', function(req, res){
 	User.getUser(function(err, users) {
 		if(err){
 			throw err;
