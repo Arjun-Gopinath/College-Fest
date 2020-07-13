@@ -8,6 +8,10 @@
     padding: 0;
     font-family:  'Poppins', sans-serif;
 }
+body{
+  left:0px;
+}
+
 html{
     scroll-behavior: smooth;
     overflow-x:hidden; 
@@ -69,7 +73,7 @@ html{
 
 .navbar-brand img{
    
-font-family: 'Shadows Into Light', cursive;
+ font-family: 'Shadows Into Light', cursive;
  height:100px;
  width:80px;
  margin-left:10px;
@@ -86,7 +90,7 @@ font-family: 'Shadows Into Light', cursive;
     text-align: left;
     color:white;
     line-height:50px;
-   border-bottom:2px solid #1e1e1e;
+    border-bottom:2px solid #1e1e1e;
 }
 
 #nav-bar ul li a:hover{
@@ -113,7 +117,7 @@ font-family: 'Shadows Into Light', cursive;
 
 .nav-link{
    
-    font-weight: 600;
+    font-weight:600;
     font-size:16px;
     
 }
@@ -179,20 +183,20 @@ font-family: 'Shadows Into Light', cursive;
 }
 #registertext{
     position:relative;
-    top:50px;
+    top:100px;
     margin-left:50%;
     transform:translateX(-50%);
-    padding-top:20px;
+    padding-top:30px;
     padding-bottom:30px;
     margin-bottom:100px;
     color:white;
     width:300px;
     text-align:center;
-    box-shadow:  13px 13px 7px #131313, 
-             -8px -8px 7px #262626;
+    box-shadow:  10px 10px 4px #131313, 
+                 -8px -8px 4px #262626;
     border-radius:50px;
     font-family:  'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight:700;
 }
 .underline{
     background-color:#DD0000;
@@ -201,120 +205,19 @@ font-family: 'Shadows Into Light', cursive;
     margin-left:50%;
     transform: translateX(-50%);
     padding:0;
-    margin-top:-65px;
+    margin-top:-25px;
     margin-bottom:100px;
 }
-form label{
-    padding-top:15px;
-    width:auto;
-    color:white;
-    text-align:left;
-    clear: both;
-    float:left;
-    font-family:  'Poppins', sans-serif;
-}
-option{
-    color:white;
-    font-weight:500;
-}
-form .form-control{
-    margin-left:50%;
-    transform:translateX(-50%);
-    height:50px;
-    width:450px;
-    background:#1e1e1e;
-    border-radius:25px;
-    border:none;
-    box-shadow: inset 6px 6px 4px #131313, 
-                inset -5px -5px 4px #292929;
-    outline:none;
-    margin-top:30px;
-} 
-#art-list{
-    height:50px;
-    width:100%;
+#register a{
+text-decoration: none;
 }
 
-#Tech-list{
-    height:50px;
-    width:100%;
-}
-input[type=text]:focus {
- background:#1e1e1e;
-    border-radius: 25px;
-    border:none;
-    box-shadow: inset 6px 6px 4px #131313, 
-                inset -5px -5px 4px #292929;
-    outline:none;
-}
-
-::-webkit-input-placeholder { 
-    font-weight:600;
-    font-size:15px;
-}
-#semester:focus {
-    background:#1e1e1e;
-    border-radius: 25px;
-    border:none;
-    box-shadow: inset 6px 6px 4px #131313, 
-                inset -5px -5px 4px #292929;
-    outline:none;
-}
-select{
-    color:white;
-}
-
-
-
-
-#branch:focus {
-    background:#1e1e1e;
-    border-radius: 25px;
-    border:none;
-    box-shadow: inset 6px 6px 4px #131313, 
-                inset -5px -5px 4px #292929;
-    outline:none;
-}
-
-input[type=email]:focus {
- background:#1e1e1e;
-    border-radius: 25px;
-    border:none;
-    box-shadow: inset 6px 6px 4px #131313, 
-                inset -5px -5px 4px #292929;
-    outline:none;
-}
-.submit-btn{
-    margin-left:50%;
-    transform: translateX(-50%);
-    width:200px;
-    height:45px;
-    border-radius:50px;
-    outline:none;
-    border:none;
-    margin-top:30px;
-    background:#1e1e1e;
-    box-shadow:  6px 6px 13px #131313, 
-             -6px -6px 3px #292929;
-    color:#c4fb6d;
-    outline:none;
-    transition:0.5s;
-}
-.submit-btn:hover{
-    margin-left:50%;
-    transform: translateX(-50%);
-    width:200px;
-    height:45px;
-    border-radius:50px;
-    outline:none;
-    border:none;
-    margin-top:30px;
-    background:#1e1e1e;
+#registertext:hover{
+  
      box-shadow: inset 6px 6px 4px #131313, 
                 inset -5px -5px 4px #282828;
-    color:palegreen;
     
-    
+     cursor: pointer;
 }
 
 /* ----------About---------------*/
@@ -355,11 +258,11 @@ input[type=email]:focus {
 }
 @keyframes colornext
 {  0%{
-	background:yellow;
+	background:#ffd700;
 	}
 	
 	
-	50%{ background:yellow;
+	50%{ background:#ffd700;
         
 		
 	}
@@ -403,29 +306,67 @@ input[type=email]:focus {
 
 
 /* ----------Event list---------------*/
-#Events{
-    height:auto;
-    background:#1e1e1e;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+/*------SWIPER_CREW------*/
+ .swiper-container {
+	 margin-top:0px;
+     width: 100%;
+	 height:800px; 
+     padding-top:0px;
+	 padding-bottom:100px;
+	 margin-bottom:0px;
+	 background:#232020;
+    }
+.swiper-container h1{
+    position: absolute;
+     margin-left:50%;
+     transform:translateX(-50%);
+     color:yellow;
+     margin-top:50px;
+    font-weight:500;
+    border-bottom:2px solid white;
+    padding-bottom:20px;
 }
-.event-container h2{
-    color:white;
-    margin-left:50%;
-    margin-top:50px;
+.imgbx1 img{
+   object-fit: contain;
+    width:100%;
+    height:400px;
 }
-.event-container img{
-    width:800px;
-    margin-left:50%;
-}
-.event-container p{
-    color:white;
+.swiper-slide {
+    padding-top: 200px;
+      background-position: center;
+      background-size: cover;
+      width:290px;
+	  height:455px;
+    }
+.imgbx { 
+	width:70%;
+	padding:20px;
+    background:#ff7315;
+	height:300px;
     margin-left:50%;
     transform:translateX(-50%);
-    margin-top:50px;
+    margin-top:150px;
+    color:#f4f4f4;
 }
+
+.details{
+	position:fixed;
+	text-align:center;
+	width:90%;
+	background:#3a3535;
+	padding-top:0;
+	max-height:50px;
+	margin:0;
+     margin-left:50%;
+    transform:translateX(-50%);
+	font-family:sans-serif;
+	font-size:0.9vw;
+	font-variant:small-caps;
+	color:white;
+}
+
+
+
 
 
 /* ----------CONTACT---------------*/
@@ -434,7 +375,7 @@ input[type=email]:focus {
     margin-left:50%;
     transform:translateX(-50%);
     font-size: 40px;
-    color:#1e1e1e;
+    color:white;
     border-bottom: 2px solid #DD0000;
     width:250px;
     padding-bottom: 20px;
@@ -446,7 +387,7 @@ input[type=email]:focus {
 #contact{
     padding-top: 50px;
     padding-bottom: 30px;
-    background:#7fcd91;
+    background:#34a7b2;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -469,24 +410,26 @@ table{
     margin-left:50%;
     transform: translateX(-50%);
     margin-bottom:30px;
+    width:auto;
 }
 table td,th{
-    padding:0px 90px;
-    text-align: center;
+    padding:0px 50px;
 }
 th{
     text-decoration: none;
     font-weight:700;
-
 }
 td{
    height:50px;
-  font-weight:500;
+   font-weight:500;
 }
 
 .contact-content span{
     color:white;
 }
+
+
+
 /*-----FOOTER----*/
 #footer{
 	padding-top:20px;
