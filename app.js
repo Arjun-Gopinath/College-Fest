@@ -33,7 +33,7 @@ mongoose.connect(uri,function(err){
 });
 var db = mongoose.connection;
 
-app.post('/pages', (req, res) => {
+app.post('/latestUser', (req, res) => {
 	var user = req.body;
 	console.log(user);
 	User.addUser(user, (err, users) => {

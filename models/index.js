@@ -38,7 +38,7 @@ const consumerSchema = new mongoose.Schema({
 
 });
 
-const User = module.exports = mongoose.model('Users', consumerSchema);
+const User = module.exports = mongoose.model('users', consumerSchema);
 // Get User
 
 module.exports.getUser = function(callback, limit){
