@@ -172,11 +172,16 @@ font-family: 'Shadows Into Light', cursive;
     padding-bottom:50px;
 }
 
+#register a{
+    text-decoration: none;
+} 
+
 .form-container{
     margin-left:50%;
     transform:translateX(-50%);
   
 }
+
 #registertext{
     position:relative;
     top:50px;
