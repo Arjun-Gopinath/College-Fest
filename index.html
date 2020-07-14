@@ -1,12 +1,10 @@
 <html>
-  
     <head>
-  
-      <title>Saparya 20</title>
-      
-      <meta charset="utf-8">
+        <title>SAPARYA-20</title>
+        
+        <link rel="icon" type="image/png" href="./images/saparya 20.png" sizes="96x96">
 
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -16,45 +14,29 @@
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
-        
-
 
      <link rel="stylesheet" type="text/css" href="./style.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css"> 
+
+     <link rel="stylesheet" href="swiper-bundle.min.css"> 
 
     </head>
-    
-    <style>
-    .navbar-toggler-icon{
-        color:white;
-    }
-        
-        
-   .mul-select{
-    width:100%;
-               }
-    </style>
 
-    
-    
     
     <body>
     
         <!--NavBar-->
         <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
-
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="images/saparya-20.png"></a>
-            
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
               <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav" class="collapse navbar-toggleable-xs">
+            <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">HOME</a>
@@ -167,9 +149,11 @@
                     <a href="#"><h2 id="registertext">REGISTER HERE</h2></a>
                     <div class="underline"></div>
                 </div>
+            
             </div>
-        </div>
 
+        </div>
+        
 <!-----------GO-TOP------------------->
 <a class="gotopbtn" href="#"><i class="fa fa-angle-double-up" ></i></a>
         
@@ -204,16 +188,64 @@
             
         <!---------------------EVENT LIST------------------>    
 <a name="event-list"></a>
-<section id="Events">
-  <div  class=row>
-    <div class="col-md-6 event-container">
-        <h2>EVENT LIST</h2>
-    </div>
- </div>      
-    
-</section>
-        
-        
+ <div class="swiper-container">
+<h1>Events</h1>
+		<div class="swiper-wrapper">
+		
+			<div class="swiper-slide">
+				<div class="imgbx1">
+                  <img src="images/day1-1.png">
+				</div>
+				<div class="details">
+			   		 <h3>DAY-1</h3>
+			    </div>
+			</div>
+			
+			<div class="swiper-slide">
+				<div class="imgbx1">
+                  <img src="images/day2.png">
+				</div>
+				<div class="details">
+			   		 <h3>DAY-2</h3>
+			    </div>
+			</div>
+			
+			<div class="swiper-slide">
+				<div class="imgbx1">
+					 <img src="images/day3.png">
+				</div>
+				<div class="details">
+                    <h3>DAY-3</h3>
+			    </div>
+			</div>
+			
+			
+			
+			
+		</div>
+    <!-- Add Pagination -->
+    	<div class="swiper-pagination"></div>
+  	</div>
+	<script src="swiper-bundle.min.js"></script>
+	 <script>
+		var swiper = new Swiper('.swiper-container', {
+		  effect: 'coverflow',
+		  grabCursor: true,
+		  centeredSlides: true,
+		  slidesPerView: 'auto',
+		  coverflowEffect: {
+			rotate: 0,
+			stretch:0,
+			depth: 300,
+			modifier:5,
+			slideShadows: true,
+		  },
+		  pagination: {
+			el: '.swiper-pagination',
+		  },
+		});
+  </script>
+   
         <!---------------------Contact------------------>
 <a name="contact-page"></a>
         <div section id="contact">
@@ -261,7 +293,36 @@
 			
              </section>
         
+    <script>
+        $(document).ready(function(){
+            $(".mul-select").select2({
+                    placeholder: "Select Events", //placeholder
+                    tags: true,
+                    tokenSeparators: ['/',',',';'," "] 
+                });
+            })
+    </script>
     
+    
+    <script type = "text/javascript">
+        
+        $(document).ready(function() {
+
+          var last_valid_selection = null;
+
+          $('select#art-list').change(function(event) {
+
+            if ($(this).val().length > 5) {
+
+              $(this).val(last_valid_selection);
+              alert("Max selection reached, Please make selections wisely";
+            } 
+            else {
+              last_valid_selection = $(this).val();
+            }
+          });
+        });
+        </script>
         
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
