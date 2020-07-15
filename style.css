@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
@@ -182,7 +183,7 @@ html{
     transform:translateX(-50%);
     padding-top:30px;
     padding-bottom:30px;
-    margin-bottom:100px;
+    margin-bottom:200px;
     color:white;
     width:300px;
     text-align:center;
@@ -192,16 +193,8 @@ html{
     font-family:  'Poppins', sans-serif;
     font-weight:700;
 }
-.underline{
-    background-color:#DD0000;
-    height:3px;
-    width:200px;
-    margin-left:50%;
-    transform: translateX(-50%);
-    padding:0;
-    margin-top:-25px;
-    margin-bottom:100px;
-}
+
+
 #register a{
 text-decoration: none;
 }
@@ -408,15 +401,17 @@ text-decoration: none;
 table{
     margin-left:50%;
     transform: translateX(-50%);
-    margin-bottom:30px;
+    margin-bottom:20px;
     width:auto;
 }
 table td,th{
     padding:0px 50px;
 }
-th{
+th{ font-family: 'Roboto', sans-serif;
     text-decoration: none;
     font-weight:700;
+    font-size:20px;
+    text-align: center;
 }
 td{
    height:50px;
