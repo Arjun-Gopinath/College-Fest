@@ -476,3 +476,7 @@ td{
  padding-bottom:30px;
     margin-bottom:30px;
 }
+.created{
+    color:transparent;
+    float: left;
+}
