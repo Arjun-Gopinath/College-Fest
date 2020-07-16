@@ -171,7 +171,10 @@ html{
 
 /*-------------Register-----------------*/
 #register{
-    background-color:#1e1e1e;
+    background-image: url(images/paint-new.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height:auto;
     padding-bottom:50px;
 }
